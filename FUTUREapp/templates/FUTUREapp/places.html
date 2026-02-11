@@ -39,13 +39,15 @@
                 <ul class="nav-links">
                    <li><a href="/" class="active">HOME</a></li>
                     <li><a href="/about"class="active">ABOUT</a></li>
-                    <li><a href="places"class="active">PLACES</a></li>
-                    <li><a href="blog"class="active">BLOG</a></li>
+                    <li><a href="/places"class="active">PLACES</a></li>
+                    <li><a href="/blog"class="active">BLOG</a></li>
                     <li><a href="/contact"class="active">CONTACT US</a></li>
                 </ul>
             </div>
         </nav>
     <section class="places-section">
+        {% for place in places %}
+
         <h2>Places</span></h2>
         <div class="underline"></div>
     <div style="text-align:right; margin-bottom:20px;">

@@ -12,7 +12,7 @@ def places_list(request):
     places = Places.objects.all()
     return render(request, 'FUTUREapp/places.html',{'places': places})
 def about(request):
-    return render(request, 'FUTUREappp/about.html')
+    return render(request, 'FUTUREapp/about.html')
 def contact(request):
     return render(request, 'FUTUREapp/contact.html')
 def blog(request):
