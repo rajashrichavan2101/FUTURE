@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #from django.shortcuts import render
+=======
+
+>>>>>>> f4d6ebe389920ffe608c6a5e978380aceeec0f69
 
 # Create your views here.
 
