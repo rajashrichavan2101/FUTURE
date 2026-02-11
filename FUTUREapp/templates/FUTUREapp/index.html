@@ -1,0 +1,144 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog and Place Explorer</title>
+    <link rel="stylesheet" href="{% static 'FUTUREapp/css/index.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container flex-between">
+            <div class="top-left">
+                <span> United States <i class="fa fa-caret-down"></i></span>
+                <span class="ml-20">Sign Up</span>
+            </div>
+            <div class="top-right">
+                <span><i class="fa fa-phone"></i> Call : +1234567890</span>
+                <span class="ml-20"><i class="fa fa-envelope"></i> demo@gmail.com</span>
+            </div>
+        </div>
+    </div>
+
+    <header class="hero">
+        <nav class="navbar">
+            <div class="container flex-between">
+                <div class="logo">
+    <div class="logo-icon">
+        <i class="fas fa-plane-departure"></i>
+    </div>
+    <div class="logo-text">
+        <span class="main-logo">Travel Blog</span>
+        <span class="sub-logo">Place Explorer</span>
+    </div>
+</div>
+                <ul class="nav-links">
+                    <li><a href="/" class="active">HOME</a></li>
+                    <li><a href="/about"class="active">ABOUT</a></li>
+                    <li><a href="places"class="active">PLACES</a></li>
+                    <li><a href="blog"class="active">BLOG</a></li>
+                    <li><a href="/contact"class="active">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="hero-content">
+         <button class="slider-arrow left"><i class="fa fa-chevron-left"></i></button>
+            <div class="hero-text">
+                <h1>NOW START <br> <span>YOUR TRAVELING</span></h1>
+                <p>When exploring new destinations, the point of traveling is that it brings a natural flow of moments, creating memories that feel beautifully real and inspiring....</p>
+                <div class="hero-btns">
+                    <a href="#" class="btn btn-white">READ MORE</a>
+                    <a href="#" class="btn btn-white">CONTACT US</a>
+                </div>
+            </div>
+            <button class="slider-arrow right"><i class="fa fa-chevron-right"></i></button>
+        </div>
+    </header>
+
+    <section class="places container">
+        <h2 class="section-title">World Place <span>Packages</span></h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=600" alt="Tuscany">
+                <div class="card-body">
+                    <h3>Tuscany</h3>
+                    <p class="country"><i class="fa fa-map-marker-alt"></i> Italy</p>
+                    <p>Tuscany is a beautiful region in central Italy, famous for its rolling hills, vineyards, and historic towns. It is known for its rich art and culture, with cities like Florence, Pisa, and Siena showcasing Renaissance architecture and world-famous landmarks.</p>
+                    <div class="card-footer">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.pelago.com/img/destinations/paris/0619-0939_paris.jpg" alt="Paris">
+                <div class="card-body">
+                    <h3>Paris</h3>
+                    <p class="country"><i class="fa fa-map-marker-alt"></i>France</p>
+                    <p>Paris is the capital city of France and is one of the most beautiful and popular tourist destinations in the world. It is known as the City of Love and is famous for its iconic Eiffel Tower, the Louvre Museum, and charming streets filled with cafés and art.</p>
+                    <div class="card-footer">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="overlay">
+            <div class="container text-center">
+                <h2 class="section-title white">About Our Site</h2>
+                <p class="about-text">A travel blog and place explorer acts as a digital guide, combining personal, in-depth narratives with practical, data-driven insights about destinations. These platforms, like Nomadic Matt or Laura the Explorer, provide detailed itineraries,, photography, and tips, helping travellers explore, understand local cultures, and plan trips. They bridge the gap between inspiration and logistical planning. </p>
+                <button class="btn btn-dark">Read More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- Contact Form -->
+        <div class="footer-form">
+            <h3>Contact Us</h3>
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Your Email">
+            <input type="text" placeholder="Phone Number">
+            <textarea placeholder="Your Words"></textarea>
+            <button>SEND</button>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-info">
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Locations</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <p>+91 12345 67890</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <p>demo@gmail.com</p>
+            </div>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+    </div>
+</footer>

@@ -1,0 +1,20 @@
+{% load static %}
+<h2>Add / Edit Place</h2>
+
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="text" name="title" placeholder="Title"
+           value="{{ place.title|default:'' }}"><br><br>
+
+    <input type="text" name="location" placeholder="Location"
+           value="{{ place.location|default:'' }}"><br><br>
+
+    <input type="file" name="image">
+
+
+    <!-- <textarea name="description" placeholder="Description">
+{{ place.description|default:'' }}</textarea><br><br> -->
+<textarea name="description" placeholder="Description">{{ place.description|default:'' }}</textarea>
+
+    <button type="submit">Save</button>
+</form>

@@ -1,0 +1,162 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary-green: #7cb342;
+}
+
+/* Layout Helpers */
+.container { max-width: 1200px; margin: auto; padding: 0 20px; }
+.flex-between { display: flex; justify-content: space-between; align-items: center; }
+.ml-20 { margin-left: 20px; }
+
+body { background: #cdccc6; }
+
+/* Top Bar */
+.top-bar {
+    background: var(--primary-green);
+    color: #fbf9f9;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/* Navbar */
+.hero {
+    background: linear-gradient(rgba(250,248,248,0.5), rgba(0,0,0,0.5));
+    padding-bottom: 20px;
+}
+
+.navbar {
+    padding: 25px 0;
+    border-bottom: none;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links { list-style: none; display: flex; }
+.nav-links li { margin-left: 25px; }
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(255, 253, 253);
+    font-weight: 500;
+}
+
+.nav-links a.active {
+    color: var(--primary-green);
+    border-bottom: 2px solid var(--primary-green);
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.contact-box {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+}
+
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 12px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.contact-box textarea { height: 100px; }
+
+.contact-box button {
+    background: var(--primary-green);
+    color: #fff;
+    border: none;
+    padding: 12px 40px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    background: #1f1f1f;
+    padding: 60px 20px;
+    color: #f7f6f4;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.footer-form,
+.footer-info,
+.footer-social {
+    width: 30%;
+}
+
+.footer-form input,
+.footer-form textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #555;
+    padding: 10px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.footer-form button {
+    background: var(--primary-green);
+    border: none;
+    padding: 10px 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.footer-info .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-info i {
+    font-size: 20px;
+    color: var(--primary-green);
+    margin-right: 15px;
+}
+
+.footer-social h3 { margin-bottom: 20px; }
+
+.social-icons i {
+    margin-right: 15px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.social-icons i:hover {
+    color: var(--primary-green);
+}

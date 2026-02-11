@@ -1,0 +1,215 @@
+/* General Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+:root {
+    --primary-green: #7cb342;
+    --dark-bg: #212121;
+    --light-gray: #f9f9f9;
+}
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.flex-between { display: flex; justify-content: space-between; align-items: center; }
+.text-center { text-align: center; }
+.ml-20 { margin-left: 20px; }
+
+/* Top Bar */
+.top-bar { background: var(--primary-green); color: white; padding: 10px 0; font-size: 10px; }
+
+/* Hero & Nav */
+/*.hero {
+    background: none;
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    color: white;
+}*/
+.hero{
+    background: none;
+    height: auto;
+}
+
+.places-section{
+    background: transparent;
+}
+
+
+
+.navbar{
+    padding:25px 0;
+    background: black;
+    border-bottom:none;
+}
+
+.navbar { padding: 25px 0; border-bottom: 1px solid rgba(255,255,255,0.2); }
+.logo-text { font-size: 24px; font-weight: bold; margin-left: 10px; }
+.nav-links { list-style: none; display: flex; }
+.nav-links li { margin-left: 25px; }
+.nav-links a { text-decoration: none; color: white; font-weight: 500; }
+.nav-links a.active { color: var(--primary-green); border-bottom: 2px solid var(--primary-green); }
+/* Logo Styling */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    width: 45px;
+    height: 45px;
+    background: var(--primary-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.logo-icon i {
+    color: white;
+    font-size: 20px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.main-logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.sub-logo {
+    font-size: 12px;
+    color: #dcedc8;
+    letter-spacing: 1px;
+}
+
+
+/*body{
+    background:url('https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1200');
+}
+
+body{
+    background:linear-gradient(to right,rgb(203, 202, 202))
+}*/
+body{
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1200');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.places-section{
+    width:100%;
+    padding:60px 8%;
+    text-align:center;
+}
+
+.places-section h2{
+    font-size:32px;
+    font-weight:600;
+}
+
+.places-section span{
+    color:rgb(17, 232, 32);
+}
+
+.underline{
+    width:80px;
+    height:4px;
+    background:#f8f5f5;
+    margin:10px auto 40px;
+    border-radius:10px;
+}
+h2{
+    color:white;
+
+}
+
+/* Cards */
+.places-container{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+
+}
+
+.place-card{
+    width:300px;
+    height:250;
+    background:#fff;
+    border-radius:30px;
+    overflow:hidden;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.place-card:hover{
+    transform: translateY(-10px);
+}
+
+
+.place-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.place-content{
+    padding:20px;
+    text-align:left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.place-content h3{
+    font-size:22px;
+    color: black;
+}
+
+.place-content small{
+    color:#777;
+}
+
+.place-content p{
+    margin:15px 0;
+    font-size:14px;
+    color:#555;
+    line-height:1.6;
+}
+.place-card{
+    background: rgba(255,255,255,0.95);
+}
+
+
+.btn-group{
+    display:flex;
+    gap:10px;
+}
+
+.btn{
+    display:inline-block;
+    padding:10px 18px;
+    background:#333;
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+    border-radius:4px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#7bc043;
+}
+
+.book{
+    background:#7bc043;
+}
+
+.book:hover{
+    background:#689f38;
+}
