@@ -52,8 +52,9 @@
           <a href="{% url 'place_create' %}" class="btn">Add New Place</a>
     </div>
         <div class="places-container">
-            <!---place1--->
-        <div class="place-card">
+
+{% for place in places %}
+    <div class="place-card">
         <img src="{{ place.image.url }}" alt="place">
 
         <div class="place-content">
@@ -67,7 +68,11 @@
             </div>
         </div>
     </div>
-    {% endfor %}
-        </div>
+{% empty %}
+    <p>No places added yet</p>
+{% endfor %}
+
+</div>
+
     </section>
     </header>

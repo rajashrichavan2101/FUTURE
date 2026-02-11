@@ -1,4 +1,4 @@
-from django.shortcuts import render
+#from django.shortcuts import render
 
 # Create your views here.
 
@@ -12,7 +12,7 @@ def places_list(request):
     places = Places.objects.all()
     return render(request, 'FUTUREapp/places.html',{'places': places})
 def about(request):
-    return render(request, 'FUTUREappp/about.html')
+    return render(request, 'FUTUREapp/about.html')
 def contact(request):
     return render(request, 'FUTUREapp/contact.html')
 def blog(request):
@@ -32,25 +32,26 @@ def places_create(request):
         )
         return redirect('places_list')
 
-     return render(request, 'places_form.html')
+     return render(request, 'FUTUREapp/places_form.html')
+
 
 
  # UPDATE
 def places_update(request, id):
-    places =get_object_or_404(Places, id=id)
+    place = get_object_or_404(Places, id=id)
 
     if request.method == 'POST':
-      places.title = request.POST['title']
-      places.location = request.POST['location']
-      places.description = request.POST['description']
-        
-    if 'image' in request.FILES:
-             places.image = request.FILES['image']
-             places.save()
-             return redirect('places_list')
+        place.title = request.POST['title']
+        place.location = request.POST['location']
+        place.description = request.POST['description']
 
-             return render(request, 'places_form.html', {'places': places})
+        if 'image' in request.FILES:
+            place.image = request.FILES['image']
 
+        place.save()
+        return redirect('places_list')
+
+    return render(request, 'FUTUREapp/places_form.html', {'place': place})
 
  # DELETE
 def places_delete(request, id):
