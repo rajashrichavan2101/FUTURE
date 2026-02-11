@@ -1,13 +1,4 @@
-<<<<<<< HEAD
-#from django.shortcuts import render
-=======
-
->>>>>>> f4d6ebe389920ffe608c6a5e978380aceeec0f69
-
-# Create your views here.
-
-
-# Create your views here.
+#create your views here.
 from django.shortcuts import render, redirect,get_object_or_404
 from .models import Places
 
