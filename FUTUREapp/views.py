@@ -1,10 +1,12 @@
 #create your views here.
 from django.shortcuts import render, redirect,get_object_or_404
 from .models import Places
+import json
 
 # READ – show all places
 def places_list(request):
     places = Places.objects.all()
+    print(places[0])
     return render(request, 'FUTUREapp/places.html',{'places': places})
 def about(request):
     return render(request, 'FUTUREapp/about.html')

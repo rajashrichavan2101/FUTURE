@@ -46,32 +46,28 @@
             </div>
         </nav>
     <section class="places-section">
-        {% for place in places %}
-
+        
         <h2>Places</span></h2>
         <div class="underline"></div>
-    <div style="text-align:right; margin-bottom:20px;">
-          <a href="{% url 'place_create' %}" class="btn">Add New Place</a>
-    </div>
+        <div style="text-align:right; margin-bottom:20px;">
+            <a href="{% url 'place_create' %}" class="btn">Add New Place</a>
+        </div>
         <div class="places-container">
-
-{% for place in places %}
-    <div class="place-card">
-        <img src="{{ place.image.url }}" alt="place">
-
-        <div class="place-content">
-            <h3>{{ place.title }}</h3>
-            <small>{{ place.location }}</small>
-            <p>{{ place.description }}</p>
-
-            <div class="btn-group">
-                <a href="{% url 'place_update' place.id %}" class="btn">Edit</a>
+            {% for place in places %}
+            <div class="place-card">
+                <img src="{{ place.image.url}}" alt="place">
+                
+                <div class="place-content">
+                    <h3>{{ place.title }}</h3>
+                    <small>{{ place.location }}</small>
+                    <p>{{ place.description }}</p>
+                    
+                    <div class="btn-group">
+                        <a href="{% url 'place_update' place.id %}" class="btn">Edit</a>
                 <a href="{% url 'place_delete' place.id %}" class="btn book">Delete</a>
             </div>
         </div>
     </div>
-{% empty %}
-    <p>No places added yet</p>
 {% endfor %}
 
 </div>
